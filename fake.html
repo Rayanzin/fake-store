@@ -7,7 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <input type="text" placeholder="Pesquisar">
+       <div>
+        <h3>Filtrar por:</h3>
+        <select>
+            <option selected disabled>Categoria</option>
+            <option>Todos</option>
+            <option>jóias</option>
+            <option>Blusas</option>
+            <option>Bolsas</option>
+        </select>
+        <select>
+            <option selected disabled>Avaliação</option>
+            <option>Todos</option>
+            <option>Melhor Avaliação</option>
+        </select>
+       </div>
+    </header>
+    <main>
+        <ul>
+            <li id="cards"></li>
+        </ul>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
