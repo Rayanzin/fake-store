@@ -1,0 +1,27 @@
+@media screen and (max-width:900px) {
+    #cards{
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+}
+@media screen and (max-width:670px) {
+    #cards{
+        grid-template-columns: 1fr 1fr !important;
+    }
+    header input{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    header h3{
+        margin-top: 10px;
+    }
+    header div{
+        display: flex;
+        gap: 10px;
+        & select{
+            padding: 5px;
+            border-radius: 10px;
+            outline: none;
+        }
+    }
+}
