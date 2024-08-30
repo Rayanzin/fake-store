@@ -8,27 +8,28 @@
 </head>
 <body>
     <header>
-        <input type="text" placeholder="Pesquisar">
+        <input type="text" id="pesquisar" placeholder="Pesquisar" onkeyup="filtrar()">
        <div>
         <h3>Filtrar por:</h3>
-        <select>
-            <option selected disabled>Categoria</option>
-            <option>Todos</option>
-            <option>jóias</option>
-            <option>Blusas</option>
-            <option>Bolsas</option>
+        <select id="categoria" onchange="category()">
+            <option selected disabled value="todos">Categoria</option>
+            <option value="todos">Todos</option>
+            <option value="men's clothing">Roupas Masculinos</option>
+            <option value="women's clothing">Roupas Feminino</option>
+            <option value="jewelery">Jóias</option>
+            <option value="electronics">Eletrônicos</option>
         </select>
-        <select>
+        <select id="avaliacao" onchange="filtroPorAvaliacao()">
             <option selected disabled>Avaliação</option>
-            <option>Todos</option>
-            <option>Melhor Avaliação</option>
+            <option value="todos">Todos</option>
+            <option value="2">À cima de: 2</option>
+            <option value="3">À cima de: 3</option>
+            <option value="4">À cima de: 4</option>
         </select>
        </div>
     </header>
     <main>
-        <ul>
-            <li id="cards"></li>
-        </ul>
+        <ul id="cards"></ul>
     </main>
     <script src="index.js"></script>
 </body>
