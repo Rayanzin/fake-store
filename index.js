@@ -48,9 +48,9 @@ function category() {
             li[i].style.display = 'none'
         }
     }
+    filtroPorAvaliacao() 
 }
 function filtroPorAvaliacao() {
-    li.innerHTML = ''
     for (let i = 0; i < objeto.length; i++) {
         if (objeto[i].rating.rate >= avaliacao.value && categoria.value == 'todos' || objeto[i].rating.rate >= avaliacao.value && objeto[i].category == categoria.value) {
             li[i].style.display = 'block'
