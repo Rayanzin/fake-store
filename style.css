@@ -13,7 +13,9 @@ body {
 header {
     background-color: lightskyblue;
     padding: 20px;
-
+    & h3{
+        margin-top: 20px;
+    }
     & input {
         width: 40%;
         padding: 10px;
